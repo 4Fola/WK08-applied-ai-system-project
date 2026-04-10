@@ -3,7 +3,7 @@
 
 # NB:
 ### App Web Dashboard
-<img src="demo/GameGlitch2.0.gif" alt="Game Glitch 2.0 web UI & Walkthrough">
+<img src="assets/GameGlitch2.0.gif" alt="Game Glitch 2.0 web UI & Walkthrough">
 
 
 ## Original Project
@@ -34,7 +34,11 @@ python app/cli.py
 ```
 
 To run the web interface:
-- python app/web.py
+- python app/web.py 
+   OR
+- python -m app.web
+
+Web UI Should be accessible at (http://localhost:5000/) if all goes well.
 
 ## Sample Interactions
 
