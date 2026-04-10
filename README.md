@@ -5,7 +5,6 @@
 ### App Web Dashboard
 <img src="assets/GameGlitch2.gif" alt="Game Glitch 2.0 web UI & Walkthrough">
 
-
 ## Original Project
 This project extends the **[Game Glitch Investigator (Module 1)](https://github.com/4Fola/ai110-module1show-gameglitchinvestigator-starter/)**, which originally performed simple rule-based analysis of game glitch reports.
 
