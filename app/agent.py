@@ -4,12 +4,26 @@ Core reasoning logic for Game Glitch Investigator.
 
 from app.retriever import retrieve_known_glitch
 from app.evaluator import score_confidence
+from app.validator import validate_input
+from app.logger import log_event
 
 # WK08 §1 Functionality: Core reasoning module | Agentic reasoning using retrieved evidence
 def analyze_glitch(glitch_report: str) -> dict:
     """
     Analyze a game glitch report and return a diganosis using retrieved knowledge.
     """
+
+    # WK08 §5 Ethics: Input validation
+    if not validate_input(glitch_report):
+        log_event("Rejected invalid input")
+        return {
+            "diagnosis": "Invalid input",
+            "explanation": "Please provide a clearer description of the glitch.",
+            "confidence": 0.0,
+            "reasoning_summary": "Input validation failed"
+        }
+    
+    log_event("input accepted for analysis")
 
     # Step I: Interpret input
     interpreted_issue = glitch_report.lower()
