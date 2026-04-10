@@ -31,17 +31,17 @@ Confidence scores helped surface uncertainty.
 AI assistance was helpful in structuring modular logic and identifying guardrails.
 In some cases, AI suggestions required simplification to maintain explainability.
 
-User
- ├─ CLI
- └─ Web UI
-      ↓
-Input Validator
-      ↓
-Retriever (RAG)
-      ↓
-Agentic Reasoning
-      ↓
-Confidence Scorer
-      ↓
-Output + Logs
+User <br>
+ ├─ CLI <br>
+ └─ Web UI <br>
+      ↓ <br>
+Input Validator <br>
+      ↓ <br>
+Retriever (RAG) <br>
+      ↓ <br>
+Agentic Reasoning <br>
+      ↓ <br>
+Confidence Scorer <br>
+      ↓ <br>
+Output + Logs <br>
 
