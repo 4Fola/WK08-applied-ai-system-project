@@ -3,7 +3,7 @@
 
 # NB:
 ### App Web Dashboard
-<img src="assets/GameGlitch2.0.gif" alt="Game Glitch 2.0 web UI & Walkthrough">
+<img src="assets/GameGlitch2.gif" alt="Game Glitch 2.0 web UI & Walkthrough">
 
 
 ## Original Project
