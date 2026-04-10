@@ -1,7 +1,6 @@
 # 🎮 Game Glitch Investigator 2.0: The Impossible Guesser
 # 👉 [ReadMe](README.md) | [Model Card](model_card.md) |
 
-# NB:
 ### App Web Dashboard
 <img src="assets/GameGlitch2.gif" alt="Game Glitch 2.0 web UI & Walkthrough">
 
