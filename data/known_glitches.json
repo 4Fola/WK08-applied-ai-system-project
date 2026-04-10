@@ -1,0 +1,16 @@
+{
+    "crash_on_startup": {
+        "keywords": ["crash", "startup", "launch"],
+        "cause": "Corrupted game files or missing dependencies",
+        "fix": "Verify game files or reinstall required libraries"      
+    },
+
+    "fps_drop": {
+        "keywords": ["lag", "fps", "stutter"],
+        "cause": "Performance bottleneck or graphics settings too high",
+        "fix": "Lower graphics settings or update GPU drivers"
+    }
+}
+
+
+
