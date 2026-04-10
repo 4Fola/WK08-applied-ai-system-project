@@ -32,16 +32,16 @@ AI assistance was helpful in structuring modular logic and identifying guardrail
 In some cases, AI suggestions required simplification to maintain explainability.
 
 ### User 
-### ├─ CLI <p>
-### └─ Web UI <p>
-###      ↓ <p>
-### Input Validator <p>
-###      ↓ <p>
-### Retriever (RAG) <p>
-###      ↓ <p>
-### Agentic Reasoning <p>
-###      ↓ <p>
-### Confidence Scorer <p>
-###      ↓ <p>
-### Output + Logs <p>
+### ├─ CLI
+### └─ Web UI
+###       ↓ 
+### Input Validator
+###       ↓ 
+### Retriever (RAG) 
+###       ↓ 
+### Agentic Reasoning 
+###       ↓ 
+### Confidence Scorer 
+###       ↓ 
+### Output + Logs 
 
