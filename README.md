@@ -5,7 +5,13 @@
 <img src="assets/GameGlitch2.gif" alt="Game Glitch 2.0 web UI & Walkthrough">
 
 ## Original Project
-This project extends the **[Game Glitch Investigator (Module 1)](https://github.com/4Fola/ai110-module1show-gameglitchinvestigator-starter/)**, which originally performed simple rule-based analysis of game glitch reports.
+This project extends the **[Game Glitch Investigator (Module 1)](https://github.com/4Fola/ai110-module1show-gameglitchinvestigator-starter/)**, which originally performed simple rule-based analysis of game glitch reports. The prior module was chosen because it is an excellent first based on the following reasoning:
+✅ Agentic reasoning
+✅ Step-by-step diagnosis
+✅ Validation & testing loop
+- Easy to explain why the AI’s reasoning is trustworthy
+- Natural professional framing (“AI debugging assistant”)
+- Clean architecture evolution from a simple prototype
 
 ## Project Summary
 This Game Glitch Investigator 2.0 is a hybrid AI system that diagnoses game glitches by combining
