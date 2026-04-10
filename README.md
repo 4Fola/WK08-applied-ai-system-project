@@ -1,33 +1,79 @@
-# 🎮 Game Glitch Investigator: The Impossible Guesser
+# 🎮 Game Glitch Investigator 2.0: The Impossible Guesser
+# 👉 [ReadMe](README.md) | [Model Card](model_card.md) |
 
 # NB:
 ### App Web Dashboard
-<img src="demo/GameGlitch.gif" alt="Game Glitch web UI">
+<img src="demo/GameGlitch2.0.gif" alt="Game Glitch 2.0 web UI & Walkthrough">
 
-### `What was/were broken?`  
-- Game keeps saying go lower even after 1 was entered. Mathematically backward given that's the lowest expected possible value In check_guess, when guess > secret
-- New Game button feature doesn't reset the game.
-- Inconsistent range, going higher also shows the same issue as going lower e.g., when 99 was entered it says go higher, 
-100 was entered it says go higher, 1000000, despite supassing the required stipulated upper limit range etc.
-- Difficulty level has no impact on game.
 
-### `Logic Flaws`  
-- String Type error when randomly converting secret to a string. E.g. a conversion of 50 > "20" will always lead to a TypeError as noticed in broken hints.
-- Function update_score adds point even if one gesses too high on even-numbered attemps.
-  
-### `Debugging and recommended fixes`
-- Review check_guess: consider swapping return message guess > secret to say "Lower"
-- Type enforcement: INT comparisons for secret & guess
-- Consider clean logical flow and award points for correct guesses only and subract for wrong guesses.
+## Original Project
+This project extends the **[Game Glitch Investigator (Module 1)](https://github.com/4Fola/ai110-module1show-gameglitchinvestigator-starter/)**, which originally performed simple rule-based analysis of game glitch reports.
 
-## Summary & Developer Habits:
-- Always perform unit tests before deploying to UI.
-- AI Help: AI can be helpful in locating concrete issues, impact explanation and targeted improvement suggestions.
-- Streamlit: The way Streamlit runs top to bottom, keeps changing secret number fix by stabilizing random.randint so that the number is only picked once saving session state.
-- Create test case independenctly and ask AI to do the same and then compare.
-- AI Thoughts: AIs can be great and can also be confidently wrong, AI should be used as a collaborator or for 1st draft, but always double-check it recommendation / work. <strong> "Trust but, Verify Always!"</strong>
+## Project Summary
+This Game Glitch Investigator 2.0 is a hybrid AI system that diagnoses game glitches by combining
+retrieval-augmented knowledge with structured agentic reasoning. The system explains its decisions,
+scores confidence, and safely handles uncertainty.
 
-# NB END:
+## ✨ System Architecture Diagram ✨
+<img src="assets/system_architecture.png" alt="System Architecture Diagram">
+
+## Architecture Overview
+The system follows a modular pipeline:
+- Input (CLI or Web UI)
+- Retrieval of known glitch data (RAG)
+- Agentic reasoning loop (hypothesis + verification)
+- Confidence scoring and guardrails
+- Logged, explainable output.
+
+A system architecture diagram is provided in `/assets`.
+
+## Setup Instructions
+```bash
+pip install -r requirements.txt
+python app/cli.py
+```
+
+To run the web interface:
+- python app/web.py
+
+## Sample Interactions
+
+Input:
+“The game crashes on startup”
+Output:
+Diagnosis: Corrupted game files or missing dependencies
+Confidence: 0.85
+Reasoning: Matched known glitch pattern
+
+Input:
+“Something strange happens sometimes”
+Output:
+Diagnosis: Unknown glitch
+Confidence: 0.40
+Reasoning: No known patterns matched
+
+## Design Decisions
+
+- Retrieval was implemented using transparent keyword matching to improve explainability.
+- Agentic reasoning was structured into explicit steps to ensure reliability and testability.
+- Confidence scoring was added to communicate uncertainty responsibly.
+
+## Testing Summary
+
+- 3 automated tests implemented
+- Known glitch cases passed
+- Unknown and invalid inputs were safely handled
+- Confidence scores reflected evidence usage
+
+## Reflection
+This project demonstrated the importance of grounding AI outputs in evidence, designing for failure,
+and explaining uncertainty clearly. Building guardrails and evaluation early improved trustworthiness.
+
+
+
+
+
+# -------------- NB END: --------------
 
 ## 🚨 The Situation
 
