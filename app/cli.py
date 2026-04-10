@@ -3,7 +3,6 @@ CLI interface for Game Glitch Investigator.
 """
 
 from app.agent import analyze_glitch
-import streamlit as st
 
 # WK08 §1 Functionality: CLI entrypoint
 def main():
@@ -12,9 +11,10 @@ def main():
 
     print("\nDiagnosis:", result["diagnosis"])
     print("Explanation:", result["explanation"])
-
-
+    print("Confidence:", result["confidence"])
+    print("Reasoning:", result["reasoning_summary"])
 
 if __name__ == "__main__":
     main()
+    
 

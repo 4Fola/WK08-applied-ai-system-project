@@ -51,8 +51,11 @@ def analyze_glitch(glitch_report: str) -> dict:
         "reasoning_summary": reasoning_path
     }
 
-
-
+# Requirement | How Phase 4 Addresses It
+# Reliability | Logs + validation + safe fallback
+# Security    | Rejects malformed inputs
+# Ethics      | Explicit uncertainty handling
+# Trust       | Transparent decision trail
 
 
 

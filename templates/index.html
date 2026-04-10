@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset=""UTF-8">
+    <title> WK-VIII Applied AI System | Game Glitch Investigator 2.0</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+
+    </style>
+
+</head>
+
+<body> 
+
+    <h2>Applied AI System | Game Glitch Investigator 2.0</h2>
+
+    <form method="post">
+        <textarea name=""glitch_report" placeholder=""Describe the glich..."></textarea><br><br>
+        <button type="submit">Analyze</button>
+    </form>
+
+{%if result %}
+<hr>
+<p><strong>Diagnosis: </strong> {{ result.diagnosis }}</p>
+<p><strong>Explanation: </strong> {{ result.explanation }} </p>
+<p><strong>Confidence: </strong> {{ result.confidence }} </p>
+<p><strong>Reasoning: </strong> {{ result.reasoning_summary }} </p>
+{% endif %}
+
+</body>
+</html>
