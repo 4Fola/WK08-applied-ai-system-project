@@ -11,7 +11,7 @@ def retrieve_known_glitch(glitch_report: str) -> dict | None:
     Retrieve known glitch data based on keyword matching.
     """
 
-    data_path = Path("data/known_glitches.json")
+    data_path = Path(__file__).parent.parent / "data" / "known_glitches.json"
     
     with open(data_path, "r") as file:
         known_glitches = json.load(file)

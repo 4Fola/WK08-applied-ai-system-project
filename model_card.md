@@ -1,5 +1,6 @@
-# 🎮 Model Card | Game Glitch Investigator 2.0: The Impossible Guesser
 # 👉 [Model Card](model_card.md) | [ReadMe](README.md) |
+
+# 🎮 Model Card | Game Glitch Investigator 2.0: The Impossible Guesser
 
 ## 🧠 `model_card.md` (Responsible AI Reflection)
 
