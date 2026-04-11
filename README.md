@@ -2,7 +2,7 @@
 # 👉 [ReadMe](README.md) | [Model Card](model_card.md) |
 
 ### App Web Dashboard
-<img src="assets/GameGlitch2.0.gif" alt="Game Glitch 2.0 web UI & Walkthrough">
+<img src="assets/GameGlitch2.gif" alt="Game Glitch 2.0 web UI & Walkthrough">
 
 ## Original Project
 This project extends the **[Game Glitch Investigator (Module 1)](https://github.com/4Fola/ai110-module1show-gameglitchinvestigator-starter/)**, which originally performed simple rule-based analysis of game glitch reports. The prior module was chosen because it is an excellent first based on the following reasoning:
