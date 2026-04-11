@@ -1,8 +1,8 @@
-# 🎮 Game Glitch Investigator 2.0: Applied AI System
+# 🎮 Game Glitch Investigator 2.0: The Impossible Guesser
 # 👉 [ReadMe](README.md) | [Model Card](model_card.md) |
 
 ### App Web Dashboard
-<img src="assets/GameGlitch2.0.gif" alt="Game Glitch 2.0 web UI & Walkthrough">
+<img src="assets/GameGlitch2.gif" alt="Game Glitch 2.0 web UI & Walkthrough">
 
 ## Original Project
 This project extends the **[Game Glitch Investigator (Module 1)](https://github.com/4Fola/ai110-module1show-gameglitchinvestigator-starter/)**, which originally performed simple rule-based analysis of game glitch reports. The prior module was chosen because it is an excellent first based on the following reasoning:
@@ -13,57 +13,23 @@ This project extends the **[Game Glitch Investigator (Module 1)](https://github.
 - Natural professional framing (“AI debugging assistant”)
 - Clean architecture evolution from a simple prototype
 
-
-## Overview
-Game Glitch Investigator 2.0 is an applied AI system that assists users in diagnosing video game issues by combining **retrieval‑augmented knowledge** with **structured agentic reasoning**. The system explains its decisions, reports confidence, and safely handles uncertainty through explicit guardrails and evaluation.
-
-This project demonstrates practical AI system design with an emphasis on **reliability, transparency, and responsible deployment**.
-
----
-
-## Project Background
-This system extends the **Game Glitch Investigator (Module 1)** project  
-(https://github.com/4Fola/ai110-module1show-gameglitchinvestigator-starter),  
-which originally performed simple rule‑based classification of glitch reports.
-
-The original project was selected because it naturally supports:
-- Step‑by‑step diagnostic reasoning  
-- Evidence‑based validation  
-- Clear explanation of AI trustworthiness  
-- Professional framing as an AI debugging assistant  
-
----
-
-## System Capabilities
-- Diagnoses common game glitches using retrieved knowledge
-- Applies agentic reasoning to validate hypotheses
-- Explains decisions in human‑readable terms
-- Assigns confidence scores based on evidence usage
-- Rejects invalid or low‑quality inputs
-- Logs system decisions for auditability
-
-The system can be used via:
-- A command‑line interface (CLI)
-- A minimal Flask‑based web interface
-
----
+## Project Summary
+This Game Glitch Investigator 2.0 is a hybrid AI system that diagnoses game glitches by combining
+retrieval-augmented knowledge with structured agentic reasoning. The system explains its decisions,
+scores confidence, and safely handles uncertainty.
 
 ## ✨ System Architecture Diagram ✨
 <img src="assets/system_architecture.png" alt="System Architecture Diagram">
 
 ## Architecture Overview
-The system follows a modular, production‑oriented pipeline:
+The system follows a modular pipeline:
+- Input (CLI or Web UI)
+- Retrieval of known glitch data (RAG)
+- Agentic reasoning loop (hypothesis + verification)
+- Confidence scoring and guardrails
+- Logged, explainable output.
 
-1. User Input (CLI or Web UI)
-2. Input Validation & Guardrails
-3. Retrieval of known glitch data (RAG)
-4. Agentic reasoning loop (hypothesis → verification)
-5. Confidence scoring and structured logging
-6. Explainable output
-
-A system architecture diagram is included in the `/assets` directory.
-
----
+A system architecture diagram is provided in `/assets`.
 
 ## Setup Instructions
 ```bash

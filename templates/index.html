@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <meta charset=""UTF-8">
-    <title> WK-VIII Applied AI System | Game Glitch Investigator 2.0</title>
+<head>
+    <meta charset="UTF-8">
+    <title>Game Glitch Investigator 2.0</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 600px;
+            max-width: 640px;
             margin: 40px auto;
+            line-height: 1.6;
         }
-
+        h2 {
+            margin-bottom: 10px;
+        }
         textarea {
             width: 100%;
-            height: 100px;
+            height: 120px;
+            padding: 8px;
         }
-
+        button {
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+        }
     </style>
-
 </head>
+<body>
 
-<body> 
+<h2>Applied AI System | Game Glitch Investigator 2.0</h2>
+<p>Describe a game issue and receive an AI-assisted diagnosis.</p>
 
-    <h2>Applied AI System | Game Glitch Investigator 2.0</h2>
+<form method="post">
+    <textarea name="glitch_report" placeholder="Describe the glitch..."></textarea><br><br>
+    <button type="submit">Analyze</button>
+</form>
 
-    <form method="post">
-        <textarea name=""glitch_report" placeholder=""Describe the glich..."></textarea><br><br>
-        <button type="submit">Analyze</button>
-    </form>
-
-{%if result %}
-<hr>
-<p><strong>Diagnosis: </strong> {{ result.diagnosis }}</p>
-<p><strong>Explanation: </strong> {{ result.explanation }} </p>
-<p><strong>Confidence: </strong> {{ result.confidence }} </p>
-<p><strong>Reasoning: </strong> {{ result.reasoning_summary }} </p>
+{% if result %}
+<div class="result">
+    <hr>
+    <p><strong>Diagnosis:</strong> {{ result.diagnosis }}</p>
+    <p><strong>Explanation:</strong> {{ result.explanation }}</p>
+    <p><strong>Confidence:</strong> {{ result.confidence }}</p>
+    <p><strong>Reasoning:</strong> {{ result.reasoning_summary }}</p>
+</div>
 {% endif %}
 
 </body>
 </html>
+``
